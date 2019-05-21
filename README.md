@@ -30,13 +30,14 @@ Users can utilize the trained model directly to test query contigs. Or you can m
 Note: Before training, set the path to where the database is located. All labels should be encoded to one-hot labels.
 
 To make a prediction, users' own query contigs should be edited into a ".csv" file, where every line contains a single query contig. Through test.py, RNN-VirSeeker will give a set of scores to each query contig, higher of which represents its classification result.
+
 # Copyright and License Information
 Copyright (C) 2019 Jilin University
 
 Authors: Yan Miao, Fu Liu, Yun Liu
 
-This program is freely available as Python at https://github.com/jessieren/VirFinder.
+This program is freely available as Python at https://github.com/crazyinter/RNN-VirSeeker.
 
-Commercial users should contact Dr. Sun at fsun@usc.edu, copyright at the University of Southern California.
+Commercial users should contact Mr. Miao at miaoyan17@mails.jlu.edu.cn, copyright at Jilin University.
 
 This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.
