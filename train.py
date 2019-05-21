@@ -1,17 +1,12 @@
 
 # coding: utf-8
-
-# In[ ]:
-
-
-#导入相应的库（对数据库进行切分需要用到的库是sklearn.model_selection 中的 train_test_split）
 import os 
 import numpy as np
 import tensorflow as tf
 import matplotlib as mpl 
 import matplotlib.pyplot as plt 
 from sklearn import metrics
-os.chdir('dir') #切换当前操作路径
+os.chdir('dir') 
 
 X_train=np.loadtxt(open("train_data.csv","rb"),delimiter=",",skiprows=0)
 y_train=np.loadtxt(open("train_label.csv","rb"),delimiter=",",skiprows=0)
