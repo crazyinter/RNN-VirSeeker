@@ -19,3 +19,14 @@ pip install tensorflow
 ```
 Our codes were all edited by Python 3.6.5 with TensorFlow 1.3.0.
 # Usage
+It is simple to use RNN-VirSeeker for users' database. <br>
+There are two ways for users to train the model using train.py.
+* Using our original training database (containing 4500 viral sequences and 4500 host sequences of length 500bp) "rnn_train.csv". <br>
+Users can utilize the trained model directly to test query contigs. Or you can make some changes to the hyperparameters, and then retrain the model.
+* Using users' own database in a ".csv" format. <br>
+	* Firstly, chose a set of hyperparameters to train your dataset.
+	* Secondly, train and refine your model using your dataset according to the performance on a related validation dataset.
+	* Finally, utilize the saved well trained model to identify query contigs. 
+Note: Before training, set the path to where the database is located. All labels should be encoded to one-hot labels.
+
+To make a prediction, users' own query contigs should be edited into a ".csv" file, where every line contains a single query contig. Through test.py, RNN-VirSeeker will give a set of scores to each query contig, higher of which represents its classification result.
