@@ -29,7 +29,7 @@ Users can utilize the trained model directly to test query contigs. Or you can m
 	* Finally, utilize the saved well trained model to identify query contigs. 
 Note: Before training, set the path to where the database is located. All labels should be encoded to one-hot labels.
 
-To make a prediction, users' own query contigs should be edited into a ".csv" file, where every line contains a single query contig. Through `run.py`, RNN-VirSeeker will give a set of scores to each query contig, higher of which represents its classification result.
+To make a prediction, users' own query contigs should be edited into a ".csv" file, where every line contains a single query contig. Through `run.py`, RNN-VirSeeker will give a set of scores to each query contig, higher of which represents its classification result. To specify where the csv files are stores, use `./run.py --help`.
 
 # Copyright and License Information
 Copyright (C) 2019 Jilin University
